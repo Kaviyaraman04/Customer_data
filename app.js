@@ -131,6 +131,9 @@ const customerData = {
   "psfu_result_n5": "Satisfied",
   "L8": "Loyalty Member"
 };
+app.get('/', (req, res) => {
+  res.json({message:"server is running"});  // Send the data as JSON response
+});
 
 // Define the GET route to return the data
 app.get('/customer', (req, res) => {
